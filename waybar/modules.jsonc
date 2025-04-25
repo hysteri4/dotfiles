@@ -1,0 +1,52 @@
+{
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "format-icons": {
+      "default": "󰫣 ",
+      "active": "󰫢 ",
+    },
+  },
+
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ffcc66'><b><u>{}</u></b></span>",
+      },
+    },
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 10,
+  },
+
+  "hyprland/language": {
+    "format": "{short}",
+  },
+
+  "memory": {
+    "interval": 30,
+    "format": "\uf4bc  {used:0.1f}G",
+  },
+
+  "wireplumber": {
+    "format": "\udb81\udd7e  {volume}%",
+    "max-volume": 100,
+    "scroll-step": 5,
+  },
+
+  "group/custom-group": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false,
+    },
+    "modules": ["memory", "tray"],
+  },
+}
